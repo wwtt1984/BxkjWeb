@@ -1,0 +1,743 @@
+/*
+  Reset CSS v1.0 | 20080212 | http://meyerweb.com/eric/tools/css/reset/index.html
+*/
+
+HTML, BODY, DIV, SPAN, APPLET, OBJECT, IFRAME, H1, H2, H3, H4, H5, H6, P, BLOCKQUOTE, PRE,
+A, ABBR, ACRONYM, ADDRESS, BIG, CITE, CODE, DEL, DFN, EM, FONT, IMG, INS, KBD, Q, S, SAMP,
+SMALL, STRIKE, STRONG, SUB, SUP, TT, VAR, B, U, I, CENTER, DL, DT, DD, UL, LI,
+FIELDSET, FORM, LABEL, LEGEND, TABLE, CAPTION, TBODY, TFOOT, THEAD, TR, TH, TD {
+	margin: 0; padding: 0; border: 0;
+	outline: 0; font-size: 100%; background: transparent; vertical-align:baseline;
+}
+BODY { line-height: 1;}
+OL, UL { list-style: none;}
+BLOCKQUOTE, Q { quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none; }
+:focus { outline: 0; }
+ins { text-decoration: none; }
+del { text-decoration: line-through; }
+/* tables still need 'cellspacing="0"' in the markup */
+table { border-collapse: collapse; border-spacing: 0; }
+
+
+/*
+  co.jp base
+*/
+
+HTML {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	height: 100%;
+}
+
+BODY { 
+	margin: 0; 
+	padding: 0;
+	text-align: center;
+	background-color: #FFF;
+	background: url(../img/shared/bg-greylines.gif);
+	background-repeat: repeat;
+}
+/* Moved to the each CSS
+P {
+	margin: 0 0 10px 0;
+}
+*/
+BODY, P, TD, DIV, LI {
+	color: #333;
+}
+
+OL {
+	list-style: decimal;
+}
+
+OL.alpha {
+	list-style: upper-alpha;
+}
+
+OL LI {
+	padding: 5px 0 5px 0;
+}
+
+.txtGrey {
+	color: #666;
+}
+
+/*
+  page layout
+*/
+
+DIV#page {
+	margin-left: auto;
+	margin-right: auto;
+	width: 968px;
+	text-align: left;
+	list-style: none;
+	vertical-align: top;
+	height: auto;
+}
+
+DIV#page DIV {
+	vertical-align: top;
+}
+
+#wrapper {
+	position: relative;
+	width: 968px;
+	background: null;
+	background-color: #FFF;
+	min-height: 80%; /* IE has height hacked in in conditional below */
+	margin: 0 auto; /* compliant center */
+	text-align: left; /* reset text alignment */
+}
+
+#footer {
+	clear: both;
+	width: 968px;
+	text-align: center;
+	color:#666;
+}
+
+DIV#topBanner DIV#topBannerGrad {
+	height: 5px;
+	background: url(../img/shared/bg-topnav-ggrad.gif);
+	background-repeat: repeat-x;
+	background-color: #FFF;
+	font-size: 1px;
+	display: block;
+	clear: both;
+	position: relative;
+}
+
+DIV#FooterGrad {
+	height: 5px;
+	background: url(../img/shared/bg-topnav-ggrad.gif);
+	background-repeat: repeat-x;
+	background-color: #FFF;
+	font-size: 1px;
+	display: block;
+	clear: both;
+}
+
+#floatingBannerLeft {
+	float: left;
+	margin-right: 15px;
+}
+
+#floatingIconRight {
+	float: right;
+	margin-left: 10px;
+}
+
+#floatClear {
+	clear: both;
+	height: 20px;
+}
+
+.linkList {
+	padding: 0px 0px 0px 8px;
+	position: relative;
+	background: url(../img/shared/bg-bullet-red.gif);
+	background-repeat: no-repeat;
+	background-position: 0px 2px;
+	font-weight: bold;
+	border-bottom: 1px solid white;
+}
+
+
+/*
+  co.jp 3 column structure
+*/
+
+#shadowcol {
+	height: 20px;
+	background-color: #FFF;
+	background: url(../img/shared/bg-shadow.gif);
+	background-repeat: no-repeat;
+}
+
+#shadow2col {
+	height: 20px;
+	background-color: #FFF;
+	background: url(../img/shared/bg-shadow-2col.gif);
+	background-repeat: no-repeat;
+}
+
+#colL, #colR, #colRpre {
+	position: absolute;
+	top: 0;
+	bottom: 0; /* Opera needs this! Moz would automatically assume this as default */
+	border-width: 0px; /* widths below */
+	/* height: 100%; */ /* hacked in for IE via conditional comment */
+}
+
+#colL {
+	left: 0;
+	width: 211px;
+	background-color: #FFF;
+	border-right: 1px dotted #666;
+}
+
+#colR {
+	right: 0;
+	width: 211px;
+	background-color: #DDE7F0;
+}
+
+#colRpre {
+	right: 206px;
+	width: 5px;
+	z-index: 600;
+	background-color: #DDE7F0;
+	background: url(../img/shared/bg-dot-blue-vert.gif);
+	background-repeat: repeat-y;
+}
+
+#col3contentwrap {
+	position: relative; 
+	padding: 0 211px 0 211px;
+	width: 546px;
+	background-color: #FFF;
+}
+
+#col2Lcontentwrap {
+	position: relative; 
+	padding: 0 15px 0 211px;
+	width: 732px;
+	background-color: #FFF;
+}
+
+#col2Rcontentwrap {
+	position: relative; 
+	padding: 0 211px 0 5px;
+	width: 732px;
+}
+
+#maincontent {
+	position: relative;
+	z-index: 600;
+	padding: 0 25px 25px 20px;
+	margin: 0;
+	width: 500px;
+	/* word-wrap: break-word; */
+}
+
+#maincontentwide {
+	position: relative;
+	z-index: 600;
+	margin: 0 25px 0 20px;
+	padding: 0;
+	width: 707px;
+	/* word-wrap: break-word; */
+}
+
+#colLcontent {
+	padding: 0 10px 20px 15px;
+}
+
+#colRcontent {
+	margin: 0 0 0 5px;
+	padding: 0 0 20px 0;
+	/* height: 100%; */ /* hacked in for IE via conditional comment */
+}
+
+UL {
+	list-style: square outside none;
+	margin: 0 0 0 15px;
+}
+
+
+/*
+  maincontent column layout
+*/
+
+#maincontent DIV#leftCol {
+	float: left;
+	width: 239px;
+	margin: 0;
+	padding: 0 0 10px 0;
+}
+
+#maincontent DIV#rightCol {
+	float: left;
+	width: 239px;
+	margin: 0;
+	padding: 0 0 10px 0;
+}
+
+#ruleCol {
+	float: left;
+	background-color: #CCC;
+	width: 1px;
+	margin: 0 10px 0 10px;
+}
+
+#maincontent DIV#breakCol {
+	clear: both;
+	height: 10px;
+	padding: 5px;
+	background-color: #FFF;
+}
+
+#maincontentwide DIV#leftCol {
+	float: left;
+	width: 341px;
+	margin: 0;
+	padding: 0 0 10px 0;
+}
+
+#maincontentwide DIV#rightCol {
+	float: left;
+	width: 341px;
+	margin: 0;
+	padding: 0 0 10px 0;
+}
+
+#maincontentwide DIV#ruleCol {
+	float: left;
+	background-color: #CC;
+	width: 1px;
+	margin: 0 10px 0 10px;
+}
+
+#maincontentwide DIV#breakCol {
+	clear: both;
+	height: 10px;
+	padding: 5px;
+}
+
+
+/*
+  Side Navigation
+*/
+
+#sideNav {
+	width: 185px;
+	padding: 0;
+	margin: 0 0 20px 0;
+}
+
+#sideNav DIV {
+	min-height: 14px;
+	padding: 3px 0 3px 25px;
+	color: #666;
+	font-weight: bold;
+	margin: 0;
+	border: 0;
+}
+
+#sideNav DIV.expand {
+	background: url(../img/shared/sidenav-arrow-ondown.gif);
+	background-repeat: no-repeat;
+	background-color: #D3DACB;
+}
+
+#sideNav DIV.on {
+	background: url(../img/shared/sidenav-arrow-onright.gif);
+	background-repeat: no-repeat;
+	background-color: #D3DACB;
+}
+
+#sideNav DIV.off {
+	background: url(../img/shared/sidenav-arrow-onright.gif);
+	background-repeat: no-repeat;
+	background-color: #D4D4D4;
+}
+
+#sideNav DIV.subon {
+	background: url(../img/shared/sidenav-subarrow-on.gif);
+	background-repeat: no-repeat;
+	background-color: #E3E8DE;
+	padding: 1px 0 2px 25px;
+	color: #006CB4;
+	font-weight: bold;  
+}
+
+#sideNav DIV.suboff {
+	background: url(../img/shared/sidenav-subarrow-off.gif);
+	background-repeat: no-repeat;
+	background-color: #E3E8DE;
+	padding: 1px 0 2px 25px;
+	color: #006CB4;
+	font-weight: normal;
+}
+
+#sideNav DIV.rule {
+	padding: 0;
+	background-color: #FFF;
+	background: url(../img/shared/bg-dot-horizontal.gif);
+	min-height: 0;
+	height: 3px;
+}
+
+#sideNav DIV.off:hover, #sideNav DIV.on:hover, #sideNav DIV.expand:hover {
+	background: url(../img/shared/sidenav-arrow-hover.gif);
+	background-repeat: no-repeat;
+	background-color: #D3DACB;
+}
+
+#sideNav DIV.suboff:hover, #sideNav DIV.subon:hover {
+	background: url(../img/shared/sidenav-subarrow-hover.gif);
+	background-repeat: no-repeat;
+}
+
+
+/*
+  right column
+*/
+
+#colRrule {
+	width: 197px;
+	height: 2px;
+	background: url(../img/shared/bg-dot-blue.gif);
+	background-repeat: repeat-x;
+}
+
+#colRcontent DIV.linkList {
+	margin: 0 0 0 8px;
+	padding: 0px 9px 4px 10px;
+	background-color: #DDE7F0;
+	background: url(../img/shared/bg-bullet-red.gif);
+	background-repeat: no-repeat;
+	position: relative;
+	font-weight: bold;
+	border-bottom: 1px solid #DDE7F0
+}
+
+
+/*
+  home page variations
+*/
+
+#banner {
+	height: 213px;
+	background-color: #FFF;
+}
+
+#shadowhp {
+	height: 20px;
+	background-color: #FFF;
+	background: url(../img/shared/bg-shadow-home.gif);
+	background-repeat: no-repeat;
+}
+
+#hpcontentwrap {
+	position: relative; 
+	padding: 0 211px 0 211px;
+	width: 547px;
+	background-color: #FFF;
+}
+
+#hpcontentwrap DIV#maincontent {
+	position: relative;
+	z-index: 600;
+	padding: 0 10px 25px 10px;
+	margin: 0;
+	width: 525px;
+}
+
+#hpcolL, #hpcolR {
+	position: absolute;
+	top: 0;
+	bottom: 0; /* Opera needs this! Moz would automatically assume this as default */
+	border-width: 0px; /* widths below */
+	/* height: 100%; */ /* hacked in for IE via conditional comment */
+}
+
+#hpcolL {
+	left: 0;
+	width: 211px;
+	background-color: #fff;
+	border-right: 1px dotted #666;
+}
+
+#hpcolR {
+	right: 0;
+	width: 211px;
+	background-color: #fff;
+	border-left: 1px dotted #666;
+}
+
+#hpcolLcontent {
+	padding: 0 10px 20px 15px;
+}
+
+#hpcolRcontent {
+	margin: 0 0 0 10px;
+	padding: 0 15px 20px 0;
+	/* height: 100%; */ /* hacked in for IE via conditional comment */
+}
+
+#hpcolLcontent H2 {
+	width: 187px;
+	margin: 0 0 10px 0;
+	padding: 3px 0 0 16px;
+	height: 22px;
+	color: #666;
+	background: url(../img/shared/bg-left-hph2.gif);
+	background-repeat: no-repeat;
+	vertical-align: bottom;
+}
+
+#hpcolLcontent H3 {
+	width: 187px;
+	margin: 0 0 10px 0;
+	padding: 4 0 0 16px;
+	height: 22px;
+	color: #333;
+	background: url(../img/shared/bg-left-hph2.gif);
+	background-repeat: no-repeat;
+	vertical-align: bottom;
+	font-size: 10px;
+}
+
+
+#hpcolLcontent DIV.linkList {
+	margin: 0 0 0 8px;
+	padding: 0px 0px 4px 8px;
+	position: relative;
+	background: url(../img/shared/bg-bullet-red.gif);
+	background-repeat: no-repeat;
+	font-weight: bold;
+	line-height: 1.5em;
+	border-bottom:1px solid white;
+}
+
+#hpcolRcontent H2 {
+	width: 186px;
+	margin: 0 0 10px 0;
+	padding: 3px 0 0 16px;
+	height: 22px;
+	color: #666;
+	background: url(../img/shared/bg-right-hph2.gif);
+	background-repeat: no-repeat;
+}
+
+#hpcolRcontent H3 {
+	width: 186px;
+	margin: 0 0 10px 0;
+	padding: 4px 0 0 16px;
+	height: 22px;
+	color: #333;
+	background: url(../img/shared/bg-right-hph2.gif);
+	background-repeat: no-repeat;
+	font-size: 10px;
+}
+
+#hpcolRcontent DIV.linkList {
+	margin: 0 0 0 8px;
+	padding: 0px 10px 4px 8px;
+	position: relative;
+	background: url(../img/shared/bg-bullet-red.gif);
+	background-repeat: no-repeat;
+	font-weight: bold;
+	border-bottom:1px solid white;
+	line-height: 1.5em;
+}
+
+
+/*
+  morganstanleychina.com specific styles
+*/
+
+#breadcrumb {
+	color: #999;
+	margin-bottom: 10px;
+	width: 500px;
+}
+
+#breadcrumb a {
+	color: #016CB2;
+}
+
+
+/*
+  titles
+*/
+
+H1 {
+	color: #016CB2;
+}
+
+H2 {
+	background-repeat: repeat-x;
+	padding: 6px;
+	height: 14px;
+	color: #666;
+	margin: 0 0 10px 0;
+	border: 0;
+}
+
+H2.brown {
+	background: url(../img/shared/bg-h2-brown.gif);
+	background-repeat: repeat-x;
+}
+
+H3 {
+	height: 14px;
+	color: #333;
+	margin: 0 0 1em 0;
+	border: 0;
+}
+
+#colLcontent H2 {
+	background: url(../img/shared/bg-left-h2.gif);
+	background-repeat: no-repeat;
+}
+
+#colRcontent H2 {
+	width: 197px;
+	margin: 0 0 5px 0;
+	padding: 3px 0 0 13px;
+	height: 22px;
+	color: #223E6E;
+	background: url(../img/shared/bg-right-h2.gif);
+	background-repeat: no-repeat;
+}
+H1.pageTitle{
+	font-size:18px;
+	line-height:22px;
+	font-weight:bold;
+	color:#084980;
+	font-family: Verdana, Arial;
+	padding:0 0 10px 0;
+}
+/*
+  links
+*/
+
+A {
+	color: #00589F;
+	text-decoration: none;
+}
+
+A:hover {
+	color: #00589F;
+	text-decoration: underline;
+}
+
+#sideNav A {
+	color: #666;
+	text-decoration: none;
+}
+
+#sidenav A:hover {
+	color: #7E925E;
+	text-decoration: none;
+}
+
+#sideNav DIV.subon A, #sideNav DIV.suboff A {
+	color: #00589F;
+	text-decoration: underline;
+}
+
+#sideNav DIV.subon A:hover, #sideNav DIV.suboff A:hover {
+	color: #7E925E;
+	text-decoration: underline;
+}
+
+#footer A {
+	color: #666;
+	text-decoration: none;
+}
+
+#footer A:hover {
+	color: #00589F;
+	text-decoration: underline;
+}
+
+
+/*
+  search-related
+*/
+
+table#searchResults {
+	width: 708px;
+	overflow: hidden;
+}
+
+.fixTitle {
+	width: 670px;
+	overflow: hidden;
+}
+
+.barHeader {
+	background: #E4E8DF;
+	font-weight: bold;
+	color: #666666;
+}
+	
+.bgGreen {
+	background: #738A5C;
+}
+
+.bgLightGrey2 {
+	vertical-align: middle;
+	background: #E4E8DF;
+}
+
+.bgDot {
+	background-image:url('../img/shared/bg-dot.gif')
+}
+
+.buttonHidden{
+	display: none;
+}
+
+.buttonVisible{
+	display: block;
+}
+
+
+/*
+  forms
+*/
+
+#playButton {
+	margin: 0 0 0 5px;
+	vertical-align: top;
+}
+
+select {
+	width: 150px;
+}
+
+/* Temporary style by Nao */
+table.dottd        {border-collapse: collapse;}
+table.dottd td     {padding: 5px 5px; border-bottom: 1px dotted #cccccc; vertical-align: top}
+table.dottd th     {padding: 0px 5px; background: url(../img/shared/bg-h2-brown.gif); background-repeat: repeat-x; vertical-align: middle; text-align: left; color:#666666; height:26px;}
+table.dottd td.colhead { padding:0 5px 3px 5px; margin:0; color:#666; } 
+
+table.noline        {border-collapse: collapse;}
+table.noline td     {padding: 5px 10px 5px 0px; vertical-align: top;}
+table.noline th     {padding: 5px 10px 5px 0px; vertical-align: top}
+
+li.nn {
+	list-style:none;
+}
+
+/* Team images */
+.team_a {
+	padding-right:10px;
+	vertical-align:top;
+}
+.team_b {
+	vertical-align:top;
+}
+.team_list{
+	padding-bottom:10px;
+}
+
+#back {
+	margin: 25px 0px 40px 0px;
+}
+
+#back2 {
+	margin: 25px 0px 25px 0px;
+}
+
+#PullDown_C {
+	width:210px;
+}

@@ -1,0 +1,18 @@
+/* IE Workaround for peekaboo bug */
+#maincontent {
+	height: 1%;
+	width: 520px;
+	padding: 0 0px 25px 20px;
+}
+
+/* IE hack  - quirks mode layout REQUIRES a height here to work 
+   (1% will do) if no min-height is required
+	 this it where it fails in Strict Mode
+*/
+#wrapper {height: 1%;} 
+#colL, #colR, #colRpre, #hpcolL, #hpcolR {height: 100%; /* required by IE to inherit from wrapper (IE Hack) above*/}
+
+#maincontentwide {
+	margin: 0 15px 25px 20px; /* reduce right margin to remove overflow bg */
+	height: 1%;
+}

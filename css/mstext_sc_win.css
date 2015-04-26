@@ -1,0 +1,273 @@
+﻿/* font info: english version - one size fits all */
+
+BODY,DIV,TD,TH,P,LI,H1,H2,H3,H4,H5,INPUT,SELECT {
+	font-family: Hei, sans-serif; 
+}
+
+.english {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.english_s {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px; line-height: 14px;
+}
+
+BODY {
+	font-family: Hei, sans-serif; 
+	font-size: 11.5px;
+	line-height: 17px;
+}
+
+P {
+	font-family: Hei, sans-serif; 
+	font-size: 12px;
+	line-height: 19px;
+	padding-bottom:1em;
+}
+
+TD {
+	font-family: Hei, sans-serif; 
+	font-size: 12px;
+	line-height: 18px;
+}
+
+table.dottd td.colhead { font-size: 11px; } 
+
+H1 {
+	font-size: 15px;
+	line-height: 20px;
+}
+
+H2 {
+	font-size: 11px;
+}
+
+H3 {
+	font-size:12px;
+}
+
+H4 {
+	font-family: Hei, sans-serif; 
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: bold;
+	padding-top: 5px;
+}
+	
+H5 {
+	font-family: Hei, sans-serif; 
+	font-size: 11px;
+	line-height: 18px;
+	font-weight: normal;
+}
+
+#globalOfficesDD {
+	width: 140px;
+}
+
+#globalOfficesDD TD A {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 10px;
+	line-height: 14px;
+}
+
+/*# Form elements #*/
+input {
+	font-family: Hei, sans-serif; 
+	font-size: 11px;
+}
+
+form select {
+	font-family: Hei, sans-serif; 
+	font-size: 10px;
+}
+
+form#quickMenu input.text {
+	font-family: Hei, sans-serif; 
+	font-size: 10px;
+}
+
+form#quickMenu select {
+	font-family: Hei, sans-serif; 
+	font-size: 10px;
+}
+
+form#searchViews select {
+	font-family: Hei, sans-serif; 
+	font-size: 10px;
+}
+
+form#searchReport select {
+	font-family: Hei, sans-serif; 
+	font-size: 10px;
+}
+
+form#searchViews input.text {
+	font-family: Hei, sans-serif; 
+	font-size: 10px;
+}
+
+form#searchMS select {
+	font-family: Hei, sans-serif; 
+	font-size: 10px;
+}
+
+		
+/*##### Text Styles #####*/
+	
+#breadcrumb {
+	font-family: Hei, sans-serif; 
+	font-size: 10px;
+}
+	
+.notBold {
+	font-weight: normal;
+}
+
+.txtBlackSmall {
+	font-size: 12px;
+}
+
+.txtIntro {
+	font-size: 11.5px;
+	line-height: 17px;
+}
+
+.linkIntro, .linkintro P {
+	font-size: 11px;
+	line-height: 16px;
+}
+
+#PullDown {
+	font-size: 11.5px;
+	width:auto;
+}
+
+
+/*##### Link Styles #####*/
+
+a.ColumnLink {
+	font-size: 10px;
+	font-weight: bold;
+}
+
+a.FooterLink {
+	font-family: Hei, sans-serif; 
+	font-size: 10px;
+}
+	
+	
+/*##### Layout Styles #####*/
+
+.Required {
+	font-size: 10px;
+	font-weight: bold;
+}
+
+	
+/*##### Left Navigation Menu styles #####*/
+
+.LeftNav1On {
+	font-family: Hei, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+}
+.LeftNav1Off {
+	font-family: Hei, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+}
+.LeftNav1Hover {
+	font-family: Hei, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+}
+.LeftNav2On {
+	font-family: Hei, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+}
+.LeftNav2Off {
+	font-family: Hei, sans-serif;
+	font-size: 11px;
+}
+.LeftNav2Hover {
+	font-family: Hei, sans-serif;
+	font-size: 11px;
+}
+
+ul.leftNav li{
+	font-family: Hei, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+ul.leftNav ul.secondLevel li a {
+	font-weight: normal;
+}
+	
+ul.leftNav ul.thirdLevel li a {
+	font-weight: normal;
+}
+
+
+
+/*##### Global Declarations (from mstop) #####*/
+
+/*# Form elements #*/
+FORM#quickMenu INPUT.text {
+	font-family: Hei, sans-serif; 
+	font-size: 10px;
+}
+FORM#quickMenu select {
+	font-family: Hei, sans-serif; 
+	font-size: 10px;
+}
+
+/*##### Layout Styles #####*/
+DIV#topBanner DIV#logoAndLinks DIV#topNavMod {
+	font-size: 9px;
+	font-family: Hei, sans-serif;
+	font-weight: bold;
+}
+DIV#topBanner DIV#logoAndLinks DIV#topNavMod TABLE#utility TD {
+	font-size: 9px;
+	font-family: Hei, sans-serif;
+	line-height: 11px;
+}
+DIV#topBanner DIV#logoAndLinks DIV#topNavMod TABLE.searchField TD {
+	font-size: 9px;
+	font-family: Hei, sans-serif;
+	font-weight: bold;
+}
+	
+/*##### Top Navigation Dropdown Menu styles #####*/
+#dropmenudiv {
+	font:normal 11px Hei; 
+}
+#dropmenudiv A { 
+	font:bold 10px Hei; 
+}
+
+/*##### Additional Layout Styles #####*/
+.more {
+	position:relative;
+	top:2px;
+}
+
+/*Additional Class by Nao*/
+.linkList0 {
+	margin: 0 0 0 0;
+	padding: 0px 9px 4px 8px;
+	font-weight: bold;
+	line-height: 2.0em;
+}
+
+.linkList1 {
+	margin: 0 0 0 0;
+	padding: 0px 9px 4px 0px;
+	font-weight: bold;
+	line-height: 2.0em;
+}
