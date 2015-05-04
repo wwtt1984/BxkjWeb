@@ -69,16 +69,16 @@ topb += '    <td><a href="'+imgpref+'index.html" onmouseover="mouseOverUtility(t
 topb += '    <td class="ltBlueDivider">|</td>'
 topb += '    <td><a href="'+imgpref+'about/careers/index.html" onmouseover="mouseOverUtility(this);" onmouseout="mouseOutUtility(this);"><img src="'+imgpref+'img/shared/utility-careers_sc-off.gif" alt="" border="0"></a></td>'
 topb += '    <td class="ltBlueDivider">|</td>'
-topb += '    <td><a href="'+imgpref+'contact/index.html" onmouseover="mouseOverUtility(this);" onmouseout="mouseOutUtility(this);"><img src="'+imgpref+'img/shared/utility-contactus_sc-off.gif" alt="" border="0"></a></td>'
-topb += '    <td class="ltBlueDivider">|</td>'
+//topb += '    <td><a href="'+imgpref+'contact/index.html" onmouseover="mouseOverUtility(this);" onmouseout="mouseOutUtility(this);"><img src="'+imgpref+'img/shared/utility-contactus_sc-off.gif" alt="" border="0"></a></td>'
+//topb += '    <td class="ltBlueDivider">|</td>'
 //topb += '    <td><a href="javascript:glossary(\'sc\')" onmouseover="mouseOverUtility(this);" onmouseout="mouseOutUtility(this);"><img src="'+imgpref+'img/shared/utility-glossary_sc-off.gif" alt="" border="0"></a></td>'
 //topb += '    <td class="ltBlueDivider">|</td>'
 //topb += '    <td><a href="https://secure.ms.com/" onmouseover="mouseOverUtility(this);" onmouseout="mouseOutUtility(this);"><img src="'+imgpref+'img/shared/utility-clink-off.gif" alt="" border="0"></a></td>'
 //topb += '    <td class="ltBlueDivider">|</td>'
 
-topb += '<TD><DIV STYLE="position: relative;" ONMOUSEOVER="dropdownmenu(this, event, util1, \'offices\');globaloffdropdownH1();" ONMOUSEOUT="delayhidemenu();globaloffdropdownS1();"  ONCLICK="" >'
-topb += '<A HREF="'+imgpref+'about/global/index.html" ONMOUSEOVER="mouseOverUtility(this);" ONMOUSEOUT="mouseOutUtility(this);"><IMG SRC="'+imgpref+'img/shared/utility-group-off.gif" ALT="" BORDER="0"><IMG SRC="'+imgpref+'img/shared/utility-arrow-down.gif" ALT="" BORDER="0"></A>'
-topb += '</DIV></TD>'
+//topb += '<TD><DIV STYLE="position: relative;" ONMOUSEOVER="dropdownmenu(this, event, util1, \'offices\');globaloffdropdownH1();" ONMOUSEOUT="delayhidemenu();globaloffdropdownS1();"  ONCLICK="" >'
+//topb += '<A HREF="'+imgpref+'about/global/index.html" ONMOUSEOVER="mouseOverUtility(this);" ONMOUSEOUT="mouseOutUtility(this);"><IMG SRC="'+imgpref+'img/shared/utility-group-off.gif" ALT="" BORDER="0"><IMG SRC="'+imgpref+'img/shared/utility-arrow-down.gif" ALT="" BORDER="0"></A>'
+//topb += '</DIV></TD>'
 
 topb += '</TR>'
 topb += '</TABLE>'
@@ -193,15 +193,15 @@ if (mb == 'about'){
 	topb += '						<img src="'+imgpref+'img/shared/subnav-company_sc-'+bs+'.gif" border="0" alt="">'
 	topb += '					</td>'
 
-	topb += '					<td id="sub5" class="subNavButton" onclick="goToUrl(\''+imgpref+'about/awards/index.html\')" onmouseover="mouseOverSubMenu(this);" onmouseout="mouseOutSubMenu(this);">'
-	if (subb=='awards'){bs='on';}else{bs='off';}
-	topb += '						<img src="'+imgpref+'img/shared/subnav-awards_sc-'+bs+'.gif" border="0" alt="">'
-	topb += '					</td>'
+	//topb += '					<td id="sub5" class="subNavButton" onclick="goToUrl(\''+imgpref+'about/awards/index.html\')" onmouseover="mouseOverSubMenu(this);" onmouseout="mouseOutSubMenu(this);">'
+	//if (subb=='awards'){bs='on';}else{bs='off';}
+	//topb += '						<img src="'+imgpref+'img/shared/subnav-awards_sc-'+bs+'.gif" border="0" alt="">'
+	//topb += '					</td>'
 
-	topb += '					<td id="sub6" class="subNavButton" onclick="goToUrl(\''+imgpref+'about/global/index.html\')" onmouseover="mouseOverSubMenu(this);" onmouseout="mouseOutSubMenu(this);">'
-	if (subb=='global'){bs='on';}else{bs='off';}
-	topb += '						<img src="'+imgpref+'img/shared/subnav-global_sc-'+bs+'.gif" border="0" alt="">'
-	topb += '					</td>'
+	//topb += '					<td id="sub6" class="subNavButton" onclick="goToUrl(\''+imgpref+'about/global/index.html\')" onmouseover="mouseOverSubMenu(this);" onmouseout="mouseOutSubMenu(this);">'
+	//if (subb=='global'){bs='on';}else{bs='off';}
+	//topb += '						<img src="'+imgpref+'img/shared/subnav-global_sc-'+bs+'.gif" border="0" alt="">'
+	//topb += '					</td>'
 
 	topb += '					<td id="sub7" class="subNavButton" onclick="goToUrl(\''+imgpref+'about/careers/index.html\')" onmouseover="mouseOverSubMenu(this);" onmouseout="mouseOutSubMenu(this);">'
 	if (subb=='career'){bs='on';}else{bs='off';}
